@@ -97,8 +97,7 @@ def run_math_mastermind():
 def run_safe_ai_image_generator():
     FILTER_API_URL = "https://filters-zeta.vercel.app/api/filter"
 
-    # fallback model if needed: "black-forest-labs/FLUX.1-schnell"
-    IMG_MODEL = "stabilityai/stable-diffusion-xl-base-1.0"
+    IMG_MODEL = "stabilityai/stable-diffusion-3-medium-diffusers"
     img_client = InferenceClient(provider="hf-inference", api_key=config.HF_API_KEY)
 
     st.title("🖼️ Safe AI Image Generator")

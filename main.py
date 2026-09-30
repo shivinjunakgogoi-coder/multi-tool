@@ -1,6 +1,7 @@
 # main_part1 (Streamlit) 
 import io, re
 from io import BytesIO
+import requests
 import streamlit as st
 from huggingface_hub import InferenceClient
 import config
